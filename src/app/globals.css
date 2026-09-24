@@ -1,26 +1,81 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Typography */
+  --font-sans: var(--font-plus-jakarta-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-inter), ui-monospace, monospace;
+
+  /* 🎨 TB Check Design System Guide Colors */
+  /* Primary Colors (Steel Blue) */
+  --color-primary: #4E7BA7;
+  --color-primary-light: #E8EEF5;
+  --color-primary-dark: #3D6285;
+
+  /* Secondary Colors (Royal Lavender) */
+  --color-secondary: #7B519C;
+  --color-secondary-light: #F3E8FF;
+  --color-secondary-dark: #5F3A80;
+
+  /* Accent Colors (Sage Green / Success) */
+  --color-success: #5F8C4F;
+  --color-success-light: #E6F4EA;
+  --color-success-dark: #4E7340;
+
+  /* Map existing classes to new brand palette for seamless migration */
+  /* Teal (Primary) -> Steel Blue */
+  --color-teal-50: #E8EEF5;
+  --color-teal-100: #D6E4F0;
+  --color-teal-200: #BBD0E3;
+  --color-teal-300: #9AB8D2;
+  --color-teal-400: #739EBF;
+  --color-teal-500: #4E7BA7;
+  --color-teal-600: #3D6285;
+  --color-teal-700: #2F4D69;
+  --color-teal-800: #23394E;
+  --color-teal-900: #192735;
+  --color-teal-950: #0F1821;
+
+  /* Cyan (Secondary) -> Royal Lavender */
+  --color-cyan-50: #F3E8FF;
+  --color-cyan-100: #E5D0F9;
+  --color-cyan-200: #D0B0F2;
+  --color-cyan-300: #B88BE8;
+  --color-cyan-400: #9D64DC;
+  --color-cyan-500: #7B519C;
+  --color-cyan-600: #5F3A80;
+  --color-cyan-700: #462A60;
+  --color-cyan-800: #321E44;
+  --color-cyan-900: #21132E;
+  --color-cyan-950: #140A1C;
+
+  /* Slate (Neutral) -> TB Check Backbone */
+  --color-slate-50: #F8FAFC;  
+  --color-slate-100: #F1F5F9;
+  --color-slate-200: #E2E8F0; 
+  --color-slate-300: #CBD5E1;
+  --color-slate-400: #94A3B8;
+  --color-slate-500: #7E97A6; 
+  --color-slate-600: #64748B;
+  --color-slate-700: #475569;
+  --color-slate-800: #334155;
+  --color-slate-900: #1E2D3D; 
+  --color-slate-950: #0F172A; 
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --background: #F8FAFC;
+  --foreground: #1E2D3D;
+}
+
+.dark {
+  --background: #0F172A;
+  --foreground: #F8FAFC;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
 }
