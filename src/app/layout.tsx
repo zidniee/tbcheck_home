@@ -18,6 +18,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "TBCheck | Solusi Skrining TBC AI Akustik",
   description: "Deteksi dini risiko TBC dari suara batuk secara 100% offline dan dampingi masa pengobatan 6 bulan hingga sembuh total.",
+  manifest: "/site.webmanifest",
 };
 
 export default function RootLayout({

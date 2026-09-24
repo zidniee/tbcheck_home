@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-1">
-            <Image src="/logoText.png" alt="TBCheck Logo" width={150} height={40} className="mb-4 brightness-0 invert opacity-80" />
+            <Image src="/logoText.png" alt="TBCheck Logo" width={150} height={40} className="mb-4 brightness-0 invert opacity-80" style={{ width: "auto", height: "auto" }} />
             <p className="text-sm text-slate-400 mt-4 leading-relaxed">
               Mendeteksi risiko TBC lebih awal melalui analisis suara batuk berbasis Artificial Intelligence.
             </p>
