@@ -70,22 +70,18 @@ export default function Home() {
       {/* Banner Metrik */}
       <section className="bg-slate-900 text-white py-8 md:py-12 border-y border-teal-900/50 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 text-center divide-x divide-slate-800">
-            <div className="px-2 sm:px-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 text-center md:divide-x divide-y md:divide-y-0 divide-slate-800 py-4 md:py-0">
+            <div className="px-2 sm:px-4 py-4 md:py-0">
               <div className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-teal-400 mb-2">9.6 KB</div>
               <div className="text-xs sm:text-sm text-slate-400 font-medium">Model AI Super Ringan</div>
             </div>
-            <div className="px-2 sm:px-4">
+            <div className="px-2 sm:px-4 py-4 md:py-0">
               <div className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-teal-400 mb-2">91.7%</div>
               <div className="text-xs sm:text-sm text-slate-400 font-medium">Sensitivitas Skrining</div>
             </div>
-            <div className="px-2 sm:px-4">
+            <div className="px-2 sm:px-4 py-4 md:py-0">
               <div className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-teal-400 mb-2">100%</div>
               <div className="text-xs sm:text-sm text-slate-400 font-medium">Pemrosesan Offline</div>
-            </div>
-            <div className="px-2 sm:px-4">
-              <div className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-teal-400 mb-2">UU PDP</div>
-              <div className="text-xs sm:text-sm text-slate-400 font-medium">Kepatuhan Privasi Data</div>
             </div>
           </div>
         </div>
@@ -104,7 +100,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
             <div className="bg-slate-50 dark:bg-slate-800/50 p-6 rounded-2xl border border-slate-100 dark:border-slate-700 hover:shadow-xl hover:shadow-teal-900/5 transition-all flex flex-col h-full">
               <div className="h-56 w-full relative mb-6 rounded-xl bg-white dark:bg-slate-800 flex items-center justify-center p-4 border border-slate-100 dark:border-slate-700">
-                 <Image src="/cek batuk.png" alt="Skrining Suara Batuk" fill className="object-contain p-2" />
+                 <Image src="/cek batuk.png" alt="Skrining Suara Batuk" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-contain p-2" />
               </div>
               <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2">Skrining Suara Batuk AI</h3>
               <p className="text-slate-600 dark:text-slate-400 text-sm mt-auto">Hasil analisis spektrum batuk hanya dalam 5 detik secara on-device.</p>
@@ -112,7 +108,7 @@ export default function Home() {
             
             <div className="bg-slate-50 dark:bg-slate-800/50 p-6 rounded-2xl border border-slate-100 dark:border-slate-700 hover:shadow-xl hover:shadow-teal-900/5 transition-all flex flex-col h-full">
               <div className="h-56 w-full relative mb-6 rounded-xl bg-white dark:bg-slate-800 flex items-center justify-center p-4 border border-slate-100 dark:border-slate-700">
-                 <Image src="/care-notification.png" alt="Pendamping Terapi" fill className="object-contain p-2" />
+                 <Image src="/care-notification.png" alt="Pendamping Terapi" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-contain p-2" />
               </div>
               <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2">Pendamping Terapi 6 Bulan</h3>
               <p className="text-slate-600 dark:text-slate-400 text-sm mt-auto">Alarm obat optimistik & jurnal pengobatan harian agar tidak putus berobat.</p>
@@ -120,7 +116,7 @@ export default function Home() {
 
             <div className="bg-slate-50 dark:bg-slate-800/50 p-6 rounded-2xl border border-slate-100 dark:border-slate-700 hover:shadow-xl hover:shadow-teal-900/5 transition-all flex flex-col h-full">
               <div className="h-56 w-full relative mb-6 rounded-xl bg-white dark:bg-slate-800 flex items-center justify-center p-4 border border-slate-100 dark:border-slate-700">
-                 <Image src="/fitokimia.png" alt="Edukasi Fitokimia" fill className="object-contain p-2" />
+                 <Image src="/fitokimia.png" alt="Edukasi Fitokimia" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-contain p-2" />
               </div>
               <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2">Edukasi Herbal & Fitokimia</h3>
               <p className="text-slate-600 dark:text-slate-400 text-sm mt-auto">Panduan nutrisi tambahan dan obat herbal yang aman untuk penderita TBC.</p>
